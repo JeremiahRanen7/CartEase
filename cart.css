@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    height: 75px;
+    width:100%;
+    background-color: #ef204a;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.header .cname{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.shopcart{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    gap: 15px;
+    padding: 3px 10px;
+}
+
+.fa-solid{
+    color: #ef204a;
+}
+
+.shopcart p{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    background-color: #ef204a;
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin:20px;
+}
+
+.products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+    margin-top: 30px;
+}
+
+
+.advertisement{
+    width: 30%;
+    /*padding: 20px;*/
+    background-color: #fff;
+    margin-left: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(248, 248, 248);
+    margin-top: 22px;
+}
+
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    /*border: 2px solid #ef204a;*/
+    border-radius: 16px;
+    width: 55%;
+    height: 60%;
+}
+
+.product-image{
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.product-info h2{
+    font-size: 18px;
+    color: #ef204a;
+}
+
+.product-info h3{
+    font-size: 16px;
+    color: #000;
+}
+
+.product-info button{
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #ef204a;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.product-info button:hover{
+    background-color: #98011f;
+    color: #fff;
+}
+
+.offer-image{
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.special-deals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.special-deal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 60%;
+}
+
+.special-deal-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.special-deal-info h3{
+    color: #ef204a;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.special-deal-info p{
+    color: #000;
+    font-size: 16px;
+}
+
+.special-deal-info button {
+    background-color: #ef204a;
+    color: #fff;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.special-deal-info button:hover{
+    background-color: #98011f;
+    color: #fff;
+}
+
+.special-deal img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.my-cart{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.cart-heading{
+    width:80%;
+    background-color: #ef204a;
+    color: #fff;
+    padding: 7px 20px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+.my-cart .caption{
+    font-weight: 500;
+}
+
+.my-cart.total-money{
+    font-weight: 500;
+}
+
+.footer{
+    width: 100%;
+    background-color: #ef204a;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer h4{
+    text-align: center;
+}
+.footer h4>a{
+    color: antiquewhite;
+}
